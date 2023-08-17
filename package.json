@@ -1,44 +1,14 @@
 {
-  "name": "auto-minesweeper",
-  "productName": "auto-minesweeper",
+  "name": "autominesweeper",
   "version": "1.0.0",
-  "description": "Automatically play minesweeper",
-  "main": ".webpack/main",
+  "description": "Program that automatically solves minesweeper",
+  "main": "index.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "start": "tsc --watch"
   },
-  "keywords": ["Minesweeper"],
-  "author": {
-    "name": "Tayler",
-    "email": "taylermiller360@gmail.com"
-  },
+  "author": "Tayler Miller <taylermiller360@gmail.com> (https://github.com/OnesAndZer0s)",
   "license": "GNU",
   "devDependencies": {
-    "@electron-forge/cli": "^6.3.0",
-    "@electron-forge/maker-deb": "^6.3.0",
-    "@electron-forge/maker-rpm": "^6.3.0",
-    "@electron-forge/maker-squirrel": "^6.3.0",
-    "@electron-forge/maker-zip": "^6.3.0",
-    "@electron-forge/plugin-auto-unpack-natives": "^6.3.0",
-    "@electron-forge/plugin-webpack": "^6.3.0",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "@vercel/webpack-asset-relocator-loader": "1.7.3",
-    "css-loader": "^6.0.0",
-    "electron": "26.0.0",
-    "eslint": "^8.0.1",
-    "eslint-plugin-import": "^2.25.0",
-    "fork-ts-checker-webpack-plugin": "^7.2.13",
-    "node-loader": "^2.0.0",
-    "style-loader": "^3.0.0",
-    "ts-loader": "^9.2.2",
-    "ts-node": "^10.0.0",
-    "typescript": "~4.5.4"
-  },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "@types/node": "^20.5.0"
   }
 }
